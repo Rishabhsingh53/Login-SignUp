@@ -1,0 +1,132 @@
+body {
+    all :initial;
+}
+
+.parent {
+    width: 80%;
+    padding-top: 4.25%;
+    padding-left: 10%;
+}
+
+body > input {
+    text-indent: 20px;
+}
+
+
+.container {
+    display: flex;
+    flex-direction: row;
+    border-radius: 20px;
+}
+
+
+.signin {
+    width: 40%;
+    background-color: #58AF9B;
+    height: 85vh;
+    color: white;
+    text-align: center;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    box-shadow: 0px 0px 10px black;
+}
+
+
+.signup{
+    width: 60%;
+    height: 85vh;
+    background-color: white;
+    color: #58AF9B;
+    text-align: center;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    box-shadow: 0px 0px 10px #58AF9B;
+}
+
+
+.heading1 , .heading2 {
+    font-size: 30px;
+    font-family: 'Belanosima', sans-serif;
+    font-family: 'Rubik', sans-serif;   
+}
+
+
+.heading1 {
+    margin-top : 280px;
+    font-size: 35px;
+    box-shadow: 0px 0px ;
+}
+
+
+.heading2 {
+    margin-top: 190px;
+    font-size: 35px;
+}
+
+
+.logins{
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+
+.logins > div > img  {
+    border: 1px solid black;
+    border-radius: 50%;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+
+.google , .fb  , .linkedln {
+    width: 25px;
+    padding:10px;
+}
+
+
+.name-container , .email-contiainer , .password-container {
+    position: relative;
+}
+
+
+#name , #email , #pwd {
+    width: 290px;
+    padding : 15px 30px;
+    font-size: 16px;
+    margin-bottom: 10px;
+    border : 1px solid black;
+    border-radius: 5px;
+    background-color: #F0F4F3;
+}
+
+
+#user , #mail , #lock {
+    width: 16px;
+    position: absolute;
+    top : 15px;
+    left: 293px
+}
+
+
+.btn-signin  {
+    padding: 15px 30px;
+    width:200px;
+    margin-top: 30px;
+    background-color: #58AF9B;
+    color : white;
+    border: 1px solid white;
+    border-radius: 25px;
+}
+
+
+.btn-signup  {
+    padding: 15px 30px;
+    width:200px;
+    margin-top: 30px;
+    background-color: #58AF9B;
+    color : white;
+    border: 1px solid #58AF9B;
+    border-radius: 25px;
+}
