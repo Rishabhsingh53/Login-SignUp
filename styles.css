@@ -3,64 +3,140 @@ body {
 }
 
 .parent {
-    width: 80%;
-    padding-top: 4.25%;
-    padding-left: 10%;
+    width: 100vw;
+    height: 100vh;
+   display: flex;
+   justify-content: center;
+   align-items: center;
 }
 
-body > input {
-    text-indent: 20px;
-}
 
 
 .container {
     display: flex;
     flex-direction: row;
     border-radius: 20px;
+    height:80vh ;
+    width: 80vw;
+    
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+
+}
+.banner{
+   height: 100%;
+    width: 350px;
+    overflow: hidden;
+    z-index: 100;
+    transition: all 1.5s ease;
+    position: relative;
 }
 
-
-.signin {
-    width: 40%;
+.slider{
+    
+    display: flex;
+    width: 80vw;
+    height: 100%;
+    justify-content: space-between;
+    transition: all 1.5s ease;
+    border-radius: 20px;
     background-color: #58AF9B;
-    height: 85vh;
+}
+.signin1 {
+    
+    width: 300px;
+    height: 100%;
     color: white;
     text-align: center;
     border-top-left-radius: 20px;
     border-bottom-left-radius: 20px;
-    box-shadow: 0px 0px 10px black;
+   padding: 0 30px;
+    
 }
-
-
-.signup{
-    width: 60%;
-    height: 85vh;
-    background-color: white;
-    color: #58AF9B;
+.signin2 {
+    width: 300px;
+    height: 100%;
+    color: white;
     text-align: center;
     border-top-right-radius: 20px;
     border-bottom-right-radius: 20px;
+    padding: 0 30px;
+    
+}
+
+.banner2{
+    height: 100%;
+    
+    flex:1;
+    overflow: hidden;
+    z-index: 0;
+    transition: all 1.5s ease;
+}
+.slider2{
+    display: flex;
+    width: 200vw;
+    
+    height: 100%;
+    z-index: 0;
+    align-items: center;
+    gap: 20px;
+    justify-content: space-between;
+    transition: all 1.5s ease;
+    border-radius: 20px;
+   
+}
+
+
+.signup1{
+    width: 80vw;
+    height: 100%;
+    background-color: white;
+    color: #58AF9B;
+    text-align: center;
+    display: flex;
+   
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
     box-shadow: 0px 0px 10px #58AF9B;
+    overflow: hidden;
+}
+.signup2{
+    width:100%;
+    height: 100%;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    
+    color: #58AF9B;
+    text-align: center;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    box-shadow: 0px 0px 10px #58AF9B;
+    overflow: hidden;
 }
 
 
 .heading1 , .heading2 {
-    font-size: 30px;
+    font-size: 15px;
     font-family: 'Belanosima', sans-serif;
     font-family: 'Rubik', sans-serif;   
 }
 
 
 .heading1 {
-    margin-top : 280px;
-    font-size: 35px;
+    margin-top : 100px;
+    font-size: 15px;
     box-shadow: 0px 0px ;
 }
 
 
 .heading2 {
-    margin-top: 190px;
-    font-size: 35px;
+    margin-top : 0px;
+    font-size: 15px;
 }
 
 
@@ -75,45 +151,50 @@ body > input {
 .logins > div > img  {
     border: 1px solid black;
     border-radius: 50%;
-    margin-top: 5px;
-    margin-bottom: 5px;
+    
 }
 
 
 .google , .fb  , .linkedln {
     width: 25px;
-    padding:10px;
+    padding:5px;
 }
 
 
 .name-container , .email-contiainer , .password-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     position: relative;
 }
 
 
 #name , #email , #pwd {
-    width: 290px;
-    padding : 15px 30px;
+   
+    width: 300px;
+    padding : 15px 40px;
     font-size: 16px;
     margin-bottom: 10px;
-    border : 1px solid black;
+  border: none;
+
     border-radius: 5px;
-    background-color: #F0F4F3;
+    background-color: #d5e8e3;
 }
 
 
 #user , #mail , #lock {
+
     width: 16px;
-    position: absolute;
-    top : 15px;
-    left: 293px
+position: absolute;
+    left: 10px;
+    top: 15px;
 }
 
 
 .btn-signin  {
     padding: 15px 30px;
-    width:200px;
-    margin-top: 30px;
+    width:150px;
+    margin-top: 60px;
     background-color: #58AF9B;
     color : white;
     border: 1px solid white;
@@ -123,8 +204,8 @@ body > input {
 
 .btn-signup  {
     padding: 15px 30px;
-    width:200px;
-    margin-top: 30px;
+    width:150px;
+    
     background-color: #58AF9B;
     color : white;
     border: 1px solid #58AF9B;
